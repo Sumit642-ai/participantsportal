@@ -1,14 +1,17 @@
-import { Clock, MapPin, ChevronRight } from "lucide-react";
+import { Clock, MapPin, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { Session } from "@/data/eventData";
 
 interface EventCardProps {
   session: Session;
   index: number;
-  onClick: () => void;
 }
 
-const EventCard = ({ session, index, onClick }: EventCardProps) => {
+const EventCard = ({ session, index }: EventCardProps) => {
+  const handleClick = () => {
+    window.open(session.venue_map, "_blank");
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
@@ -24,7 +27,7 @@ const EventCard = ({ session, index, onClick }: EventCardProps) => {
 
       {/* Card content */}
       <div
-        onClick={onClick}
+        onClick={handleClick}
         className="flex-1 mb-6 group cursor-pointer"
       >
         <div className="bg-card rounded-xl border border-border p-4 card-glow hover:border-primary/50 transition-all duration-300 group-hover:translate-x-1">
@@ -46,7 +49,10 @@ const EventCard = ({ session, index, onClick }: EventCardProps) => {
               <MapPin className="w-3 h-3" />
               {session.venue}
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+            <div className="flex items-center gap-1 text-xs text-primary group-hover:underline">
+              <span>Open Map</span>
+              <ExternalLink className="w-3 h-3" />
+            </div>
           </div>
         </div>
       </div>

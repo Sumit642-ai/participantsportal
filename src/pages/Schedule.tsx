@@ -1,26 +1,13 @@
-import { useState } from "react";
 import { Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 import Layout from "@/components/layout/Layout";
 import EventCard from "@/components/schedule/EventCard";
-import EventModal from "@/components/schedule/EventModal";
-import { events, Session } from "@/data/eventData";
+import { events } from "@/data/eventData";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { useState } from "react";
 
 const Schedule = () => {
   const [activeDay, setActiveDay] = useState("1");
-  const [selectedSession, setSelectedSession] = useState<Session | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleSessionClick = (session: Session) => {
-    setSelectedSession(session);
-    setIsModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setTimeout(() => setSelectedSession(null), 300);
-  };
 
   return (
     <Layout>
@@ -38,7 +25,7 @@ const Schedule = () => {
             </h1>
           </div>
           <p className="text-muted-foreground text-sm">
-            3 days of inspiring sessions and networking
+            3 days of inspiring sessions • Tap any event to navigate
           </p>
         </motion.div>
 
@@ -79,7 +66,6 @@ const Schedule = () => {
                     key={session.id}
                     session={session}
                     index={index}
-                    onClick={() => handleSessionClick(session)}
                   />
                 ))}
               </div>
@@ -87,13 +73,6 @@ const Schedule = () => {
           ))}
         </Tabs>
       </div>
-
-      {/* Event detail modal */}
-      <EventModal
-        session={selectedSession}
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-      />
     </Layout>
   );
 };
