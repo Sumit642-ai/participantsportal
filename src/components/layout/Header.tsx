@@ -1,6 +1,7 @@
 import { User, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLocation, useNavigate } from "react-router-dom";
+import ProfileSheet from "./ProfileSheet";
 
 const Header = () => {
   const location = useLocation();
@@ -32,9 +33,11 @@ const Header = () => {
           </div>
         </div>
         
-        <button className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-secondary/80 transition-colors">
-          <User className="w-5 h-5 text-foreground" />
-        </button>
+        <ProfileSheet>
+          <button className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-secondary/80 transition-colors">
+            <User className="w-5 h-5 text-foreground" />
+          </button>
+        </ProfileSheet>
       </div>
     </motion.header>
   );
