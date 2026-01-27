@@ -1,7 +1,12 @@
-import { User } from "lucide-react";
+import { User, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
+
   return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
@@ -10,6 +15,14 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between h-16 px-4">
         <div className="flex items-center gap-3">
+          {!isHome && (
+            <button
+              onClick={() => navigate(-1)}
+              className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-secondary/80 transition-colors mr-2"
+            >
+              <ArrowLeft className="w-5 h-5 text-foreground" />
+            </button>
+          )}
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-gold-dark flex items-center justify-center glow-gold">
             <span className="font-display font-bold text-primary-foreground text-lg">G</span>
           </div>
