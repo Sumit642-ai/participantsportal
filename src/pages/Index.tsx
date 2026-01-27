@@ -25,24 +25,18 @@ const Index = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
           </div>
 
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6"
-          >
-            <Sparkles className="w-4 h-4" />
-            Global Entrepreneurship Summit 2025
-          </motion.div>
-
-          <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 leading-tight">
-            Welcome to{" "}
-            <span className="text-gradient-gold">GES</span>
-          </h1>
           
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
-            Three days of innovation, inspiration, and networking at IIT Kharagpur.
-            Your journey to entrepreneurship starts here.
+
+          <h1 className="font-display font-extrabold text-4xl md:text-5xl lg:text-6xl text-foreground mb-3 leading-tight tracking-tight">
+            Global Entrepreneurship Summit 2026
+          </h1>
+
+          <p className="text-gradient-gold font-semibold text-base uppercase tracking-[0.24em] mb-2">
+            Odyssey of Opulence
+          </p>
+
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8 font-medium">
+            30st January to 1st February
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -133,7 +127,7 @@ const Index = () => {
                         Event Schedule
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Browse all 17 sessions
+                        Browse all 21 sessions
                       </p>
                     </div>
                   </div>
@@ -144,17 +138,6 @@ const Index = () => {
           </div>
         </motion.div>
 
-        {/* Footer note */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="text-center mt-12 pb-4"
-        >
-          <p className="text-xs text-muted-foreground">
-            Made with ❤️ at IIT Kharagpur
-          </p>
-        </motion.div>
       </div>
     </Layout>
   );

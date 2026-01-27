@@ -58,33 +58,7 @@ const ProfileSheet = ({ children }: ProfileSheetProps) => {
 
           <Separator className="bg-border" />
 
-          {/* Actions */}
-          <div className="space-y-2">
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-foreground hover:bg-secondary"
-              onClick={() => handleAction("Settings")}
-            >
-              <Settings className="w-4 h-4 mr-3" />
-              Settings
-            </Button>
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-foreground hover:bg-secondary"
-              onClick={() => handleAction("Help & Support")}
-            >
-              <HelpCircle className="w-4 h-4 mr-3" />
-              Help & Support
-            </Button>
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-destructive hover:bg-destructive/10"
-              onClick={() => handleAction("Sign Out")}
-            >
-              <LogOut className="w-4 h-4 mr-3" />
-              Sign Out
-            </Button>
-          </div>
+
         </div>
       </SheetContent>
     </Sheet>
