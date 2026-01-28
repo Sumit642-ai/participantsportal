@@ -45,25 +45,25 @@ const HallCard = ({ hall, index }: HallCardProps) => {
 
       <div className="space-y-3">
         <div className="flex items-center justify-between text-sm">
-          <span className="text-muted-foreground flex items-center gap-2">
+          {/* <span className="text-muted-foreground flex items-center gap-2">
             <Users className="w-4 h-4" />
             Availability
           </span>
           <span className={`font-semibold ${isLowAvailability ? "text-destructive" : "text-primary"}`}>
             {hall.available} / {hall.total}
-          </span>
+          </span> */}
         </div>
-        <Progress
+        {/* <Progress
           value={occupancyPercent}
           className="h-2 bg-secondary"
-        />
+        /> */}
         {isLowAvailability && (
           <p className="text-xs text-destructive">Limited spots remaining!</p>
         )}
         <p className="text-xs text-muted-foreground text-center pt-2 group-hover:text-primary transition-colors">
           Tap to open in Google Maps
         </p>
-      </div>
+      </div> 
     </motion.div>
   );
 };

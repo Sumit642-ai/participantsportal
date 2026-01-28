@@ -41,19 +41,19 @@ const Schedule = () => {
                 value="1"
                 className="font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
               >
-                Day 1
+                Day 0
               </TabsTrigger>
               <TabsTrigger
                 value="2"
                 className="font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
               >
-                Day 2
+                Day 1
               </TabsTrigger>
               <TabsTrigger
                 value="3"
                 className="font-medium data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
               >
-                Day 3
+                Day 2
               </TabsTrigger>
             </TabsList>
           </motion.div>

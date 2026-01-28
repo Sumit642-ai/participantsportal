@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const stats = [
-    { icon: Users, value: "500+", label: "Participants" },
-    { icon: Calendar, value: "17", label: "Sessions" },
-    { icon: Building2, value: "6", label: "Halls" },
+    { icon: Users, value: "1500+", label: "Participants" },
+    { icon: Calendar, value: "44", label: "Sessions" },
+    { icon: Building2, value: "21", label: "Halls" },
   ];
 
   return (
@@ -127,7 +127,7 @@ const Index = () => {
                         Event Schedule
                       </h3>
                       <p className="text-sm text-muted-foreground">
-                        Browse all 21 sessions
+                        Browse all 44 sessions
                       </p>
                     </div>
                   </div>
