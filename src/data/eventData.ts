@@ -941,7 +941,7 @@ export const events: EventDay[] = [
       {
         id: 303,
         time: "10:00 AM - 1:00 PM",
-        title: "MAS (Meet Angel Investors & Startup Connect)",
+        title: "Million At Stake",
         desc: "Meet with investors including Vivek Bajoria, Madhuri (Director, Investment and Legal at IvyCap Ventures), Deepak Daftari, Arijit Kar, Amit Jain (CEO Ashika Group), Kaushik Guha Thakurta, and Rishab Raj (Unicorn India Ventures)",
         venue: "AI.4.ICPS",
         venue_map: VENUE_MAPS.AI_4_ICPS
