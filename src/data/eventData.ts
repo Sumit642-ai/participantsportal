@@ -1231,7 +1231,7 @@ export const events: EventDay[] = [
       {
         id: 212,
         time: "2:10 PM - 2:55 PM",
-        title: "Corporate Fireside",
+        title: "Key Note Session",
         desc: "Mr. Sunil Mantri (CEO, WHSmith India)",
         venue: "V1",
         venue_map: VENUE_MAPS.V1
