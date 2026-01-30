@@ -734,7 +734,7 @@ const VENUE_MAPS = {
   V4: "https://maps.app.goo.gl/fPcxNKKK4GDTyGKS9",
   SN_BOSE: "https://maps.app.goo.gl/xRsHnhi3P2EbcVpv7",
   NALANDA: "https://maps.app.goo.gl/aYrgt1Vyn8Hj6wrA9",
-  RMOSEE: "https://maps.app.goo.gl/CMh8twNgd7FpdZmc6L",
+  RMOSEE: "https://maps.app.goo.gl/vdKMRPzErB5AgvUP7",
   AI_4_ICPS: "https://maps.app.goo.gl/yUaPBmr8TQd3ZukS8",
   TOAT: "https://maps.app.goo.gl/5TPqfVhpXbqCv6rE8",
   MULTIPLE: "https://maps.app.goo.gl/rGyfbzSURMmUzsoa9"
